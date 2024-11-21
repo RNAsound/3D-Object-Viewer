@@ -10,23 +10,52 @@ import SwiftData
 
 @main
 struct _D_Object_ViewerApp: App {
-    var sharedModelContainer: ModelContainer = {
+    @StateObject private var authService = AuthService()
+    @StateObject private var authViewModel: AuthViewModel
+    
+    var container: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            ScanModel.self, User.self
         ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+        
+        let modelConfiguration = ModelConfiguration(schema: schema,
+                                                    isStoredInMemoryOnly: false
+        )
+        
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            return try ModelContainer(for: schema,
+                                      configurations: [modelConfiguration]
+            )
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
-
+    
+    
+    // Initialize authViewModel
+    init() {
+        let viewModel = AuthViewModel(
+            authService: AuthService(),
+            modelContext: container.mainContext
+        )
+        _authViewModel = StateObject(wrappedValue: viewModel)
+    }
+    
+    // inject dependencies into child views
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if authViewModel.isAuthenticated{
+                GalleryView()
+                    .preferredColorScheme(.dark)
+                    .modelContainer(container)
+                    .environmentObject(authViewModel)
+            } else {
+                AuthView()
+                    .preferredColorScheme(.dark)
+                    .modelContainer(container)
+                    .environmentObject(authViewModel)
+            }
         }
-        .modelContainer(sharedModelContainer)
     }
 }
+
