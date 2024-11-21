@@ -65,12 +65,6 @@ Displays a thumbnail of a .usdz file,
 Using SceneKit, this file loads and displays provided 3D object files in a view that allows the user to rotate, zoom, and pan around the object in a 3D scene. 
 - There is also a resetView() function, that is triggered via double tapping the 3D scene or the button at the bottom of the view. 
 
-## Future considerations
-- The app has been left open to integration of some backend service (eg. AWS)  in the AuthService
-    - Combined with proper Row Level Security, this would integrate very nicely with the authViewModel to provide safe and secure authentication
-- I would abstract the SwiftData layer into a LocalStorageService, allowing for more flexibility and testability
-- GalleryView could also provide an “add scan” button, that would navigate the user to a view where they can scan an object of their own. Similarly, a “load scan” button could launch a FileImporter, allowing the user to load .usdz files from their device.  
-
 
 ## Basic Workflow Overview
 ### 1. User launches the app
@@ -91,4 +85,9 @@ Using SceneKit, this file loads and displays provided 3D object files in a view 
 - the user can interact with the 3D object in the ScanFileView by dragging, rotating, and zooming to view the object from any angle. 
 
 
+## Future considerations
+- The app has been left open to integration of some backend service (eg. AWS)  in the AuthService
+    - Combined with proper Row Level Security, this would integrate very nicely with the authViewModel to provide safe and secure authentication
+- I would abstract the SwiftData layer into a LocalStorageService, allowing for more flexibility and testability
+- GalleryView could also provide an “add scan” button, that would navigate the user to a view where they can scan an object of their own. Similarly, a “load scan” button could launch a FileImporter, allowing the user to load .usdz files from their device.  
 
