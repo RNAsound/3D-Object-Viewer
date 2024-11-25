@@ -24,7 +24,7 @@ This is an app that allows the user to sign in, choose a 3D object scan from a g
     - This allows for access to the persistent store and authentication service across the app, wherever needed. 
     - Also improves testability and flexibility
 
-<img src="3D Object Viewer System-1.png" width="700" />
+<img src="Screenshots/3D Object Viewer System-1.png" width="700" />
 
 ## Models
 ### User
