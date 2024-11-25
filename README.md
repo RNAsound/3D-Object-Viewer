@@ -6,8 +6,7 @@ Created by: Aren Akian
 This is an app that allows the user to sign in, choose a 3D object scan from a gallery of thumbnails, and interact with it in a 3D scene (by rotating, zooming, and panning around the object).  
 
 ## Demos
-<img src="Screenshots/ObjectViewer Short Demo.gif" width="300" />
-<img src="Screenshots/ObjectViewer Full Demo.gif" width="300" />
+<img src="Screenshots/ObjectViewer Short Demo.gif" width="300" /> <img src="Screenshots/ObjectViewer Full Demo.gif" width="300" />
 
 
 ## Screenshots
