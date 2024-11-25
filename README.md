@@ -10,10 +10,8 @@ This is an app that allows the user to sign in, choose a 3D object scan from a g
 
 
 ## Screenshots
-<img src="Screenshots/ObjectViewer1.PNG" width="300" />
-<img src="Screenshots/ObjectViewer2.PNG" width="300" />
-<img src="Screenshots/ObjectViewer3.PNG" width="300" />
-<img src="Screenshots/ObjectViewer4.PNG" width="300" />
+<img src="Screenshots/ObjectViewer1.PNG" width="300" /> <img src="Screenshots/ObjectViewer2.PNG" width="300" />
+<img src="Screenshots/ObjectViewer3.PNG" width="300" /> <img src="Screenshots/ObjectViewer4.PNG" width="300" />
 
 
 ## Design 
