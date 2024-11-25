@@ -1,10 +1,21 @@
 3D Object Viewer
 ====
 Created by: Aren Akian
-For FitMatch
 
 ## About
 This is an app that allows the user to sign in, choose a 3D object scan from a gallery of thumbnails, and interact with it in a 3D scene (by rotating, zooming, and panning around the object).  
+
+## Demos
+<img src="screenshots/ObjectViewer Short Demo.gif" width="300" />
+<img src="screenshots/ObjectViewer Full Demo.gif" width="300" />
+
+
+## Screenshots
+<img src="screenshots/ObjectViewer1.png" width="300" />
+<img src="screenshots/ObjectViewer2.png" width="300" />
+<img src="screenshots/ObjectViewer3.png" width="300" />
+<img src="screenshots/ObjectViewer4.png" width="300" />
+
 
 ## Design 
 - I structured the app following MVVM principles, using dependency injection to share data across the app. 
