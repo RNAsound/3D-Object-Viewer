@@ -6,15 +6,15 @@ Created by: Aren Akian
 This is an app that allows the user to sign in, choose a 3D object scan from a gallery of thumbnails, and interact with it in a 3D scene (by rotating, zooming, and panning around the object).  
 
 ## Demos
-<img src="screenshots/ObjectViewer Short Demo.gif" width="300" />
-<img src="screenshots/ObjectViewer Full Demo.gif" width="300" />
+<img src="Screenshots/ObjectViewer Short Demo.gif" width="300" />
+<img src="Screenshots/ObjectViewer Full Demo.gif" width="300" />
 
 
 ## Screenshots
-<img src="screenshots/ObjectViewer1.png" width="300" />
-<img src="screenshots/ObjectViewer2.png" width="300" />
-<img src="screenshots/ObjectViewer3.png" width="300" />
-<img src="screenshots/ObjectViewer4.png" width="300" />
+<img src="Screenshots/ObjectViewer1.png" width="300" />
+<img src="Screenshots/ObjectViewer2.png" width="300" />
+<img src="Screenshots/ObjectViewer3.png" width="300" />
+<img src="Screenshots/ObjectViewer4.png" width="300" />
 
 
 ## Design 
@@ -24,7 +24,7 @@ This is an app that allows the user to sign in, choose a 3D object scan from a g
     - This allows for access to the persistent store and authentication service across the app, wherever needed. 
     - Also improves testability and flexibility
 
-![alt text](<3D Object Viewer System-1.png>)
+<img src="3D Object Viewer System-1.png" width="700" />
 
 ## Models
 ### User
